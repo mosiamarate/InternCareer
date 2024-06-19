@@ -1,6 +1,7 @@
 # InternCareer
 
 # Task 1: Python Script for Web Scraping and Automation
+
 Web Scraping and Browser Automation Script Documentation
 
 Overview
@@ -9,6 +10,7 @@ This script performs two main tasks:
 Web scraping to extract COVID-19 data from the Worldometers website.
 Browser automation to extract the same data using Selenium WebDriver.
 Libraries Used
+
 1. requests: For sending HTTP requests to the website.
 2. BeautifulSoup: For parsing HTML content.
 3. selenium: For browser automation.
@@ -40,7 +42,7 @@ Script Structure
 
     python
     def web_scraping():
-        url = 'https://www.worldometers.info/coronavirus/'
+        url = '<https://www.worldometers.info/coronavirus/>'
         response = requests.get(url)
         soup = BeautifulSoup(response.text, 'html.parser')
         data = soup.find_all('div', class_='maincounter-number')
@@ -72,7 +74,7 @@ Script Structure
 
     python
     def browser_automation():
-        url = 'https://www.worldometers.info/coronavirus/'
+        url = '<https://www.worldometers.info/coronavirus/>'
         driver = webdriver.Chrome(executable_path='chromedriver.exe')
         driver.get(url)
 
@@ -85,7 +87,7 @@ Script Structure
         print('Total Recovered:', total_recovered.text)
 
         driver.quit()
-        
+
 4. Main Function
     The main function calls both web_scraping and browser_automation functions sequentially.
 
@@ -111,6 +113,5 @@ Script Structure
         Cleaned Dataframe:
         Total Cases Total Deaths Total Recovered
         704 753 890    7 010 681     675 619 811
-
 
 End of Documentation
