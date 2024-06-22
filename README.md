@@ -111,7 +111,9 @@ Script Structure
 
 6. Expected Output:
         Cleaned Dataframe:
-        Total Cases Total Deaths Total Recovered
-        704 753 890    7 010 681     675 619 811
+        Total Cases: 704 753 890
+        Total Deaths: 7 010 681
+        Total Recovered: 675 619 811
+               
 
 End of Documentation
